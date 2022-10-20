@@ -1,0 +1,77 @@
+/* CSS Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+}
+
+/* Body Style */
+body {
+    height: 90vh;
+}
+
+/* Game Container Style */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 300px;
+}
+
+/* Game Table Style */
+#gameTable {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+/* Game Cell Style */
+.gameCell {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Game Text Style */
+.cellText {
+    font-size: 60px;
+}
+
+/* Game Status Stlye */
+#gameStatus {
+    font-size: 25px;
+}
+
+/* Game Restart Button Style */
+#restartBtn {
+    padding: 10px 25px;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#restartBtn:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+/* To Margin all the 4 parts */
+.mainElement {
+    margin: 20px;
+}
+
+/* Game Heading */
+#gameHeading {
+    font-size: 35px;
+}
