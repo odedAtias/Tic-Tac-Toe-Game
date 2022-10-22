@@ -65,9 +65,7 @@ function winCheck() {
 		let cell1 = options[currentOption[0]];
 		let cell2 = options[currentOption[1]];
 		let cell3 = options[currentOption[2]];
-		if (cell1 === '' && cell2 === '' && cell3 === '') {
-			continue;
-		}
+		if (cell1 === '' && cell2 === '' && cell3 === '') continue;
 		if (cell1 == cell2 && cell2 == cell3) {
 			haveWinner = true;
 			colorWinningMove(currentOption[0], currentOption[1], currentOption[2]);
@@ -76,20 +74,18 @@ function winCheck() {
 	}
 	if (haveWinner) {
 		gameStatus.textContent = `${currentPlayer} win the game !`;
-		gameStatus.style.color = 'red';
+		gameStatus.style.color = '#90EE90';
 		running = false;
 	} else if (!options.includes('')) {
 		gameStatus.textContent = `Tie !`;
 		running = false;
-	} else {
-		changePlayerTurn();
-	}
+	} else changePlayerTurn();
 }
 
 function colorWinningMove(n1, n2, n3) {
-	cells[n1].childNodes[1].style.color = 'red';
-	cells[n2].childNodes[1].style.color = 'red';
-	cells[n3].childNodes[1].style.color = 'red';
+	cells[n1].childNodes[1].style.color = '#90EE90';
+	cells[n2].childNodes[1].style.color = '#90EE90';
+	cells[n3].childNodes[1].style.color = '#90EE90';
 }
 
 function changePlayerTurn() {
@@ -101,10 +97,10 @@ function handleRestartClick() {
 	// Clean the options array
 	options = ['', '', '', '', '', '', '', '', ''];
 	cells.forEach(cell => {
-		cell.childNodes[1].style.color = 'black';
+		cell.childNodes[1].style.color = '#fff';
 		cell.childNodes[1].textContent = '';
 	});
-	gameStatus.style.color = 'black';
+	gameStatus.style.color = '#fff';
 	currentPlayer = 'X';
 	gameStatus.textContent = `${currentPlayer}'s turn`;
 	running = true;

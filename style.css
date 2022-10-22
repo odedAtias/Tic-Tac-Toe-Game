@@ -10,9 +10,17 @@
     font-weight: bold;
 }
 
+/* CSS Varialbles */
+:root {
+    --BGCOLOR: black;
+    --GRIDCOLOR: #fff;
+}
+
 /* Body Style */
 body {
     height: 90vh;
+    background-color: var(--BGCOLOR);
+    color: var(--GRIDCOLOR);
 }
 
 /* Game Container Style */
@@ -34,7 +42,7 @@ body {
 .gameCell {
     width: 150px;
     height: 150px;
-    border: 2px solid;
+    border: 2px solid var(--GRIDCOLOR);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,13 +66,15 @@ body {
     padding: 15px 30px;
     background: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 20px;
+    color: var(--GRIDCOLOR);
+    border: var(--GRIDCOLOR) 1px solid;
 }
 
 #restartBtn:hover {
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--GRIDCOLOR);
+    color: var(--BGCOLOR);
 }
 
 /* To Margin all the 4 parts */
