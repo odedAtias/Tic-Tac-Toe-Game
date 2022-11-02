@@ -1,8 +1,11 @@
 # Tic-Tac-Toe-Game
 
-🔹A project to create a nice tic tac toe game for 2 users.
+A project to create a nice tic tac toe game for 2 users.
+
+![TicTacToe](TicTacToe.png)
 
 ## Technologies
+
 👉 HTML
 
 👉 CSS
@@ -17,7 +20,7 @@
 2. handleCellClick(cellNumber) - A function that handles a player's clicking on the game slots, during its run it checks if the move is legal, updates the board and checks if there is a win.
 3. updateChoice(cellNumber) - A function that plots the player's selection on the board.
 4. winCheck() - A function that checks whether there is a move that won the game.
-5. colorWinningMove(n1, n2, n3) - A function that colors the winning move of the game. 
+5. colorWinningMove(n1, n2, n3) - A function that colors the winning move of the game.
 6. changePlayerTurn() - A function that alternates between the player's turns.
 7. handleRestartClick() - A function that restart the game.
 
