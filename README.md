@@ -6,9 +6,9 @@ A project to create a nice tic tac toe game for 2 users.
 
 ## Technologies
 
-👉 HTML
+👉 HTML5
 
-👉 CSS
+👉 CSS3
 
 👉 JavaScript
 
